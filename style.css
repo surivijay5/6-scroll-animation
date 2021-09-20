@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(68, 68, 160);
+    margin: 2rem;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px  rgba(0, 0, 0, 0.5);
+    transform: translateX(200%);
+    transition: transform 0.4s ease;
+}
+
+.content:nth-of-type(even){
+    transform: translateX(-200%);
+}
+
+.show{
+    transform: translateX(0);
+}
